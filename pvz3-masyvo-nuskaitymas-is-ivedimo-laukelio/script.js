@@ -3,11 +3,11 @@ window.onload = function() {
 
     mygtukas.onclick = function() {
         let eilute = nuskaitoTekstiniIvedimoLaukeli("masyvas");
-        console.log(eilute);
 
         const skaiciai = splittintiSkaicius(eilute);
 
-        
+        let pastraipa = document.getElementById("rezultatas");
+        pastraipa.innerHTML = masyvoSuma(skaiciai);
     }
 }
 
@@ -25,4 +25,14 @@ function splittintiSkaicius(eilute) {
         
     }
     return skaiciai;
+}
+
+
+function masyvoSuma(masyvas) {
+    let suma = 0;
+    for (const elementas of masyvas) {
+        console.log(elementas);
+        suma += elementas;
+    }
+    return suma;
 }
