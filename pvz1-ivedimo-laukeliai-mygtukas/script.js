@@ -23,7 +23,12 @@ window.onload = function() {
 }
 
 
-
+/**
+ * Apskaičiuoja stačiakampio plotą
+ * @param {*} a - ilgis
+ * @param {*} b - plotis
+ * @returns plotą
+ */
 function staciakampioPlotas(a, b) {
     return a * b;
 }
